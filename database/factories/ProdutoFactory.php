@@ -24,7 +24,7 @@ class ProdutoFactory extends Factory
         $palavraChave = $this->faker->randomElement($produtos);
         $numero = $this->faker->randomElement(['01','02']);
 
-        $imgCaminho = 'img/' . $palavraChave . $numero . '.webp';
+        $imgCaminho = 'produtos/' . $palavraChave . $numero . '.webp';
 
         $produtoNome = $this->faker->unique()->sentence(2,true) . '' . ucfirst($palavraChave);
 
