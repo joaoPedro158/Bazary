@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     body: produtoIdsJson
             });
             if (response.ok) {
-                // window.location.href = '/endereco';
+                window.location.href = '/endereco';
             } else {
                 alert('Erro ao processar checkout. Tente novamente.');
             }
