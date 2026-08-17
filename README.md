@@ -1,5 +1,3 @@
-<!-- Coloque o link da imagem do seu banner aqui -->
-<img src="https://via.placeholder.com/1500x500/FF2D20/FFFFFF?text=Bazary+-+E-commerce+Platform" alt="Bazary Banner" width="100%">
 
 <h1 align="center">🛒 Bazary</h1>
 
@@ -10,6 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
@@ -19,35 +18,39 @@
 
 ## 📸 Demonstração Visual
 
-> **Nota:** Substitua os links das imagens abaixo pelos prints reais do seu projeto. Você pode arrastar as imagens diretamente para a caixa de edição do GitHub para gerar os links.
-
-### Tela Inicial & Vitrine de Produtos
-<img src="https://via.placeholder.com/800x450/eeeeee/999999?text=Print+da+Tela+Inicial+Aqui" alt="Tela Inicial do Bazary" width="100%">
+### Tela Inicial 
+<img width="1910" height="1035" alt="pagina_principal" src="https://github.com/user-attachments/assets/d7f90660-72b0-41dc-8301-cfb8bb9184a6" />
 
 ### Carrinho de Compras & Checkout
-<img src="https://via.placeholder.com/800x450/eeeeee/999999?text=Print+do+Carrinho+Aqui" alt="Carrinho de Compras" width="100%">
+
+<img width="1910" height="1392" alt="carrinho_compra" src="https://github.com/user-attachments/assets/7afb6af8-2881-42df-a0aa-79ccec9187a3" />
+<img width="1910" height="1181" alt="seleciona_endereco" src="https://github.com/user-attachments/assets/5c115539-ec8d-493d-8c38-02d68277efe8" />
+
+
+### Detalhe do Produto
+<img width="1910" height="1241" alt="detalhe_produto" src="https://github.com/user-attachments/assets/b817e698-0244-4cab-86a4-5baaab455ad3" />
 
 ---
 
 ## ✨ Funcionalidades Principais
 
-O sistema foi arquitetado utilizando boas práticas, separação de responsabilidades (Services, DTOs, Actions)[cite: 1] e conta com as seguintes funcionalidades:
+O sistema foi arquitetado utilizando boas práticas, separação de responsabilidades (Services, DTOs, Actions) e conta com as seguintes funcionalidades:
 
-* **Gestão de Usuários:** Autenticação, registro e gerenciamento de perfil seguros utilizando Laravel Jetstream e Fortify[cite: 1].
-* **Catálogo de Produtos:** Visualização detalhada de produtos com controle de estoque e imagens[cite: 1].
-* **Lista de Favoritos:** Os usuários podem favoritar produtos para compras futuras[cite: 1].
-* **Carrinho de Compras:** Sistema completo de adição, remoção e atualização de itens no carrinho (`CarrinhoProduto` e `ItensCompra`)[cite: 1].
-* **Gestão de Endereços:** Cadastro e seleção de múltiplos endereços de entrega por usuário[cite: 1].
-* **Fluxo de Checkout e Pagamentos:** Integração de serviços para processamento de resumo de compras e pagamentos (`CheckoutService` e `PagamentoServiceImpl`)[cite: 1].
-* **Painel Administrativo/Dashboard:** Área dedicada para visualização e gerenciamento[cite: 1].
+* **Gestão de Usuários:** Autenticação e registro  utilizando Laravel Jetstream e Fortify.
+* **Catálogo de Produtos:** Visualização detalhada de produtos com controle de estoque e imagens.
+* **Lista de Favoritos:** Os usuários podem favoritar produtos para compras futuras.
+* **Carrinho de Compras:** Sistema completo de adição, remoção e atualização de itens no carrinho (`CarrinhoProduto` e `ItensCompra`).
+* **Gestão de Endereços:** Cadastro e seleção de múltiplos endereços de entrega por usuário.
+* **Fluxo de Checkout e Pagamentos:** Integração de serviços para processamento de resumo de compras e pagamentos (`CheckoutService` e `PagamentoServiceImpl`).
+* **Painel Administrativo/Dashboard:** Pagina para gerencia os produtos cadastrado podendo apagar ou atualizar.
 
 ---
 
 ## 🛠️ Arquitetura e Padrões
 
-* **DTOs (Data Transfer Objects):** Utilizados para padronizar o tráfego de dados no fluxo de checkout e respostas de pagamento[cite: 1].
-* **Services:** Lógica de negócios isolada em classes de serviço (ex: `CalculoService`, `RegistraCompraServiceImpl`) para manter os Controllers limpos[cite: 1].
-* **Testes Automatizados:** Cobertura de testes de feature para autenticação, registro e fluxo de checkout (`CheckoutFlowTest`) usando PHPUnit[cite: 1].
+* **Padrão MVC (Model-View-Controller):** A aplicação adota a arquitetura monolítica nativa do Laravel, estruturada de forma a garantir uma separação clara entre a interface do usuário (Views em Blade), o gerenciamento das requisições e regras de roteamento (Controllers) e a manipulação dos dados e regras de negócio (Models/Eloquent), resultando em um código mais organizado e de fácil manutenção.
+* **Services:** Lógica de negócios isolada em classes de serviço (ex: `CalculoService`, `RegistraCompraServiceImpl`) para manter os Controllers limpos.
+* **Testes Automatizados:** Cobertura de testes de feature para autenticação, registro e fluxo de checkout (`CheckoutFlowTest`) usando PHPUnit.
 
 ---
 
