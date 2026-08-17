@@ -14,7 +14,7 @@ class EnderecoController extends Controller
         $enderecos = Endereco::where('user_id', auth()->id())->get();
         $checkoutPedido = $checkoutService->pedidoDTO();
         $checkoutSessao = $checkoutService->getPedido();
-        dump($checkoutSessao);
+        // dump($checkoutSessao);
         return view('endereco.selecionarEndereco', compact('enderecos', 'checkoutPedido'));
     }
 
