@@ -3,7 +3,7 @@
     <a href="/produto/{{ $produto->id }}" class="text-decoration-none text-reset">
         <div class="border-0 shadow-sm card h-100 text-decoration-none text-dark">
             {{-- Imagem do Produto --}}
-            <img src="{{ asset('storage/' . $produto->imagem) }}" class="p-3 card-img-top" alt="{{ $produto->nome }}">
+            <img src="{{ asset( $produto->imagem) }}" class="p-3 card-img-top" alt="{{ $produto->nome }}">
 
             {{-- Descrição do Produto --}}
             <div class="px-3 pb-2">
